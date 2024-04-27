@@ -1,0 +1,24 @@
+.header{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: orange;
+    padding: .2em;
+}
+.logo{
+    display: block;
+}
+.logo a img{
+    display: block;
+    width: 100%;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    display: flex;
+}
