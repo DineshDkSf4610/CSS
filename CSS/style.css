@@ -1,19 +1,288 @@
-
-
-body {
+/* body {
     background-color: chocolate;
     font-size: 1rem;
-    font-weight:300;
+    font-weight: 300;
     font-family: 'Times New Roman', Times, serif;
-   
-}
-h1 {
-    /* font-family: 'Times New Roman', Times, serif; */
-     /* font-size: 200%; */
-     font-size: 4rem;
-     font-weight: normal;
-}
-li{
+
+} */
+
+/* h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 200%;
+    font-size: 4rem;
+    font-weight: normal;
+} */
+
+/* li {
     font-size: 1.2rem;
     font-weight: bold;
+} */
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.underlineNone {
+    text-decoration: none;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.overline {
+    text-decoration: overline;
+}
+
+.linkThrough {
+    text-decoration: line-through;
+}
+
+.blink {
+    text-decoration: blink;
+}
+
+.leading {
+    line-height: 1.5;
+}
+
+.textLeft {
+    text-align: left;
+}
+
+.textRight {
+    text-align: right;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.textJustity {
+    text-align: justify;
+}
+
+.letterSpacing {
+    letter-spacing: .25em;
+}
+
+.wordSpacing {
+    word-spacing: 50px;
+}
+
+.textIndent {
+    text-indent: 50px;
+}
+
+.pseudoLetter::first-letter {
+    font-size: 2em;
+}
+
+.pseudofirstLine::first-line {
+    color: red;
+}
+
+/* psuedo classes */
+
+.pc:link {
+    color: red;
+}
+
+.pc:visited {
+    color: blue;
+}
+
+.pc:hover {
+    color: brown;
+}
+
+.pc:focus {
+    color: green;
+}
+
+#subscribe:hover {
+    color: red;
+}
+
+#subscribe:focus {
+    color: green;
+}
+
+#left-shadow {
+    text-shadow: 2px 0 0 #eded14;
+}
+
+#right-shadow {
+    text-shadow: -2px 0 0 #eded14;
+}
+
+#top-shadow {
+    text-shadow: 0 -2px 0 #eded14;
+}
+
+#bottom-shadow {
+    text-shadow: 0 2px 0 #eded14;
+}
+
+#shadow-blurring {
+    text-shadow: 0 2px 2px #eded14;
+}
+
+#shadow-color {
+    text-shadow: 0 2px 0 red;
+}
+
+#real-shadow {
+    text-shadow: 2px 2px 2px #999;
+}
+
+.wrapper {
+    background-color: yellow;
+    width: 80%;
+    height: 50%;
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+
+.borderProperty {
+    width: 50%;
+    /* border-width: 25px;
+    border-style: dashed;
+    border-color: chocolate; */
+    border: 5px dashed chocolate;
+
+}
+
+.paddingProperty {
+    /* padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px; */
+    padding: 10px 20px 10px 20px;
+}
+
+.marginProperty {
+    margin: 20px 0px;
+}
+
+.nav {
+    background-color: chocolate;
+    height: 3em;
+}
+
+.navItem {
+    /* background-color: cadetblue; */
+    display: inline-block;
+    height: 3em;
+    padding: 0em .25em;
+    line-height: 3em;
+}
+
+.navLink {
+    text-decoration: none;
+    color: black;
+}
+
+.navItem:hover {
+    background-color: yellow;
+}
+
+#commingSoonD {
+    display: none;
+}
+
+#commingSoonV {
+    visibility: hidden;
+}
+
+.box {
+    width: 5em;
+    height: 5em;
+    border: .1em solid crimson;
+    margin: .2em auto;
+    padding: .1em;
+}
+
+#box-left {
+    box-shadow: -5px -5px #66666666;
+    border-radius: 10px;
+}
+
+#box-right {
+    box-shadow: 5px 5px 5px #66666666;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#bottom-right-spread {
+    box-shadow: 5px 5px 5px 5px #66666666;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#outer-spread {
+    box-shadow: 0 0 10px #66666666;
+}
+
+#inset {
+    box-shadow: inset 0 0 10px yellowgreen;
+    border-radius: 50px;
+    line-height: 80px;
+    text-align: center;
+}
+
+.bImage {
+    /* background-image: url(./Assets/CSSlogo.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-attachment: fixed; */
+    background: beige url(./Assets/CSSlogo.jpg) no-repeat center center fixed;
+}
+
+.listNone {
+    list-style: none;
+}
+
+.listDisc {
+    list-style: disc;
+}
+
+.listCircle {
+    list-style: circle;
+}
+
+.listSquare {
+    list-style: square;
+}
+
+.listDecimal {
+    list-style-type: decimal;
+}
+
+.listDecimalLeadingZero {
+    list-style-type: decimal-leading-zero;
+}
+
+.listLowerAlpha {
+    list-style-type: lower-alpha;
+}
+
+.listUpperAlpha{
+    list-style-type: upper-alpha;
+}
+
+.listLowerRoman {
+    list-style-type: lower-roman;
+}
+
+.listUpperRoman {
+    list-style-type: upper-roman;
 }
