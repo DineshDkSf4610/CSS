@@ -1,24 +1,42 @@
+.bodyStyle{
+    margin: 0;
+}
+
 .header{
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: orange;
-    padding: .2em;
+    background-color: black;
+    padding: 1em;
 }
-.logo{
-    display: block;
-}
-.logo a img{
-    display: block;
-    width: 100%;
+.logo a img {
+    width: 7em;
 }
 .navigation{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
-.menu{
-    display: flex;
+.nav-menu li{
+    display: inline;
+    margin: 1em;
+}
+
+.nav-menu li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+}
+.book_btn{
+    border: 1px solid;
+    color: white;
+    padding: 5px;
+}
+.book_btn1{
+    border: 1px solid;
+    /* color: white; */
+    padding: 5px;
+    background-color: #0073dc;
+    border-radius: 3px;
+    margin: 5px;
 }
